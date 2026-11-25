@@ -19,4 +19,10 @@ spring:
               predicates:
                 - Path=/api/productos/**
               filters:
-                - StripPrefix=1            
+                - StripPrefix=1
+            - id: personas-route
+              uri: lb://personas
+              predicates:
+                - Path=/api/personas/**
+              filters:
+                - StripPrefix=1                 
