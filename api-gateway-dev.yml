@@ -11,10 +11,12 @@ eureka:
 spring:
   cloud:
     gateway:
-      routes:
-        - id: productos-route
-          uri: lb://productos
-          predicates:
-            - Path=/api/productos/**
-          filters:
-            - StripPrefix=1
+      server:
+        webmvc:
+          routes:
+            - id: productos-route
+              uri: lb://productos
+              predicates:
+                - Path=/api/productos/**
+              filters:
+                - StripPrefix=1            
