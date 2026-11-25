@@ -7,3 +7,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://registry-service:8761/eureka
+usuario:
+  rol: test usuario
