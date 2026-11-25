@@ -1,5 +1,14 @@
 server:
-  port: ${PORT:0}
-spring:
-  application:
-    name: personas
+  port: ${PORT:0} # Puerto aleatorio útil si levantas múltiples instancias; o fijo ej. 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+# Ejemplo de propiedad de dominio
+app:
+  productos:
+    moneda: EUR
