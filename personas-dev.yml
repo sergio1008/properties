@@ -2,7 +2,7 @@ server:
   port: ${PORT:0}
 spring:
   application:
-    name: accounting-service
+    name: personas-service
 eureka: 
   client:
     serviceUrl:
