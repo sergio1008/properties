@@ -1,5 +1,5 @@
 server:
-  port: 0 # Puerto aleatorio útil si levantas múltiples instancias; o fijo ej. 8081
+  port: ${PORT:0} # Puerto aleatorio útil si levantas múltiples instancias; o fijo ej. 8081
 
 eureka:
   client:
